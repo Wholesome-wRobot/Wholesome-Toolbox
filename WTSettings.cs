@@ -368,6 +368,18 @@ namespace WholesomeToolbox
             bootyBayTunnel.Name = "Booty Bay tunnel";
             OffMeshConnections.Add(bootyBayTunnel);
 
+            // Stormwind Trias floor
+            OffMeshConnection stormwindTriasFloor = new OffMeshConnection(new List<Vector3>()
+            {
+                new Vector3(-8856.834, 577.1238, 95.37585, "None"),
+                new Vector3(-8852.53, 573.1724, 94.68622, "None"),
+                new Vector3(-8851.224, 560.7249, 94.68636, "None"),
+                new Vector3(-8860.636, 569.5536, 101.067, "None"),
+                new Vector3(-8854.485, 575.0948, 101.067, "None")
+            }, (int)ContinentId.Azeroth, OffMeshConnectionType.Bidirectional, true);
+            stormwindTriasFloor.Name = "Stormwind Trias floor";
+            OffMeshConnections.Add(stormwindTriasFloor);
+
             OffMeshConnections.Save();
         }
 
